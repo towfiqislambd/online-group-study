@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav ul li a.active {
+    background-color: rgb(99 102 241) !important;
+    color: #fff !important;
+}
+
+/* For Swiper Slider */
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    color: #fff !important;
+}
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+}
+
+/* For Custom Pagination */
+.pagination {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.pagination button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: #eee;
+    width: 45px;
+    height: 35px;
+    color: #111;
+    font-weight: 500;
+}
+.pagination .active {
+    background: orange;
+}
+@media screen and (max-width:640px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+}
