@@ -12,7 +12,8 @@ app.use(cors({
     origin: [
         'http://localhost:5173',
         'https://online-group-study-56c30.web.app',
-        'https://online-group-study-56c30.firebaseapp.com'
+        'https://online-group-study-56c30.firebaseapp.com',
+        'https://online-group-study.netlify.app'
     ],
     credentials: true
 }))
