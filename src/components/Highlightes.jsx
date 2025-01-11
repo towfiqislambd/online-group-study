@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Highlightes = ({ assignment }) => {
     const { _id, title, thumbnail, description, marks, date, difficulty_level, email } = assignment;
     return (
-        <div className="border border-gray-700 p-6 rounded-lg hover:-translate-y-2 shadow hover:border-2 hover:border-indigo-400 duration-1000 ">
+        <div className="border border-gray-300 dark:border-gray-700 p-6 rounded-lg hover:-translate-y-2 shadow duration-1000 ">
             <div className="overflow-hidden rounded-lg mb-5">
                 <img src={thumbnail} className="w-full dark:border dark:border-gray-800 h-52 rounded-lg transform hover:scale-105 transition-transform duration-300" />
             </div>
