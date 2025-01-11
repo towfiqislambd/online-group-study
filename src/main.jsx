@@ -15,6 +15,9 @@ import CreateAssignments from './pages/CreateAssignments';
 import MyAttemptedAssignments from './pages/MyAttemptedAssignments';
 import UpdateAssignment from './pages/UpdateAssignment';
 import AssignmentDetails from './pages/AssignmentDetails';
+import AboutUs from './components/AboutUs';
+import Support from './components/Support';
+import Contact from './components/Contact';
 
 
 const router = createBrowserRouter([
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>
+      },
+      {
+        path: "/aboutUs",
+        element: <AboutUs></AboutUs>
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
+      },
+      {
+        path: "/support",
+        element: <Support></Support>
       },
       {
         path: "/login",

@@ -32,7 +32,14 @@ const Navbar = () => {
                         <li><NavLink to='/' className='rounded'>Home</NavLink></li>
                         <li><NavLink to='/assignments' className='rounded'>Assignments</NavLink></li>
                         {
-                            user && <li><NavLink to='/pending-assignments' className='rounded'>Pending Assignments</NavLink></li>
+                            user ? <li><NavLink to='/pending-assignments' className='rounded'>Pending Assignments</NavLink></li> :
+                                <li><NavLink to='/aboutUs' className='rounded'>About Us</NavLink></li>
+                        }
+                        {
+                            user ? '' : <li><NavLink to='/contact' className='rounded'>Contact</NavLink></li>
+                        }
+                        {
+                            user ? '' : <li><NavLink to='/support' className='rounded'>Support</NavLink></li>
                         }
                     </ul>
                 </div>

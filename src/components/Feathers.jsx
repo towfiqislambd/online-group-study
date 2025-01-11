@@ -21,38 +21,32 @@ const Feathers = () => {
                 <div data-aos="flip-left" className="p-5 rounded-lg space-y-4 text-center bg-indigo-100 border-[2px] border-indigo-400">
                     <IoIosPeople className="text-7xl mx-auto rounded-full p-3 text-white bg-indigo-400 " />
                     <h4 className="text-2xl dark:text-gray-800 font-bold mb-2">Growing Community</h4>
-                    <p className="text-gray-500 pb-2">After cleaning and organizing our closet, in the end we are probably wondering what we are going to do with clothes that we no longer are going to wear; perhaps they are too worn out or they don’t fit as well anymore</p>
-                    <button className="underline font-medium text-gray-700">Read More</button>
+                    <p className="text-gray-500 pb-2">After cleaning and organizing our closet, in the end we are probably wondering what we are going to do with clothes that we no longer.</p>
                 </div>
                 <div data-aos="flip-left" className="p-5 rounded-lg space-y-4 text-center bg-indigo-100 border-[2px] border-indigo-400 transition-all">
                     <MdWifiProtectedSetup className="text-7xl mx-auto rounded-full p-3 text-white bg-indigo-400 " />
                     <h4 className="text-2xl dark:text-gray-800 font-bold mb-2">Setup Team</h4>
-                    <p className="text-gray-500 pb-2">Distinctively parallel task magnetic deliverables whereas 2.0 action items. Completely repurpose installed base results whereas user-centric metrics. Dramatically communicate goal-oriented bandwidth with low-risk.</p>
-                    <button className="underline font-medium text-gray-700">Read More</button>
+                    <p className="text-gray-500 pb-2">Distinctively parallel task magnetic deliverables whereas 2.0 action items. Completely repurpose installed base results whereas user-centric.</p>
                 </div>
                 <div data-aos="flip-left" className="p-5 rounded-lg space-y-4 text-center bg-indigo-100 border-[2px] border-indigo-400 transition-all">
                     <BiSolidDonateHeart className="text-7xl mx-auto rounded-full p-3 text-white bg-indigo-400 " />
                     <h4 className="text-2xl dark:text-gray-800 font-bold mb-2">1000+ Students</h4>
-                    <p className="text-gray-500 pb-2">Dynamically incentivize turnkey platforms vis-a-vis 24/365 initiatives. Quickly enable interoperable information with bricks-and-clicks testing procedures. Enthusiastically innovate standards compliant e-tailers.</p>
-                    <button className="underline font-medium text-gray-700">Read More</button>
+                    <p className="text-gray-500 pb-2">Dynamically incentivize turnkey platforms vis-a-vis 24/365 initiatives. Quickly enable interoperable information with bricks-and-clicks.</p>
                 </div>
                 <div data-aos="flip-right" className="p-5 rounded-lg space-y-4 text-center bg-indigo-100 border-[2px] border-indigo-400 transition-all">
                     <MdSupport className="text-7xl mx-auto rounded-full p-3 text-white bg-indigo-400 " />
                     <h4 className="text-2xl dark:text-gray-800 font-bold mb-2">Dedicated Support</h4>
-                    <p className="text-gray-500 pb-2">After cleaning and organizing our closet, in the end we are probably wondering what we are going to do with clothes that we no longer are going to wear; perhaps they are too worn out or they don’t fit as well anymore</p>
-                    <button className="underline font-medium text-gray-700">Read More</button>
+                    <p className="text-gray-500 pb-2">After cleaning and organizing our closet, in the end we are probably wondering what we are going to do with clothes that we no longer.</p>
                 </div>
                 <div data-aos="flip-right" className="p-5 rounded-lg space-y-4 text-center bg-indigo-100 border-[2px] border-indigo-400 transition-all">
                     <RiFeedbackLine className="text-7xl mx-auto rounded-full p-3 text-white bg-indigo-400 " />
                     <h4 className="text-2xl dark:text-gray-800 font-bold mb-2">Assignments Feedback</h4>
-                    <p className="text-gray-500 pb-2">Dynamically incentivize turnkey platforms vis-a-vis 24/365 initiatives. Quickly enable interoperable information with bricks-and-clicks testing procedures. Enthusiastically innovate standards compliant e-tailers vis-a-vis.</p>
-                    <button className="underline font-medium text-gray-700">Read More</button>
+                    <p className="text-gray-500 pb-2">Dynamically incentivize turnkey platforms vis-a-vis 24/365 initiatives. Quickly enable interoperable information with bricks-and-clicks.</p>
                 </div>
                 <div data-aos="flip-right" className="p-5 rounded-lg space-y-4 text-center bg-indigo-100 border-[2px] border-indigo-400 transition-all">
                     <RiApps2AiFill className="text-7xl mx-auto rounded-full p-3 text-white bg-indigo-400 " />
                     <h4 className="text-2xl dark:text-gray-800 font-bold mb-2">Available Android Apps</h4>
-                    <p className="text-gray-500 pb-2">After cleaning and organizing our closet, in the end we are probably wondering what we are going to do with clothes that we no longer are going to wear; perhaps they are too worn out or they don’t fit as well anymore</p>
-                    <button className="underline font-medium text-gray-700">Read More</button>
+                    <p className="text-gray-500 pb-2">After cleaning and organizing our closet, in the end we are probably wondering what we are going to do with clothes that we no longer.</p>
                 </div>
             </div>
         </div>
