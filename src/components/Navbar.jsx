@@ -1,26 +1,29 @@
 import { FaBars } from "react-icons/fa";
-import logo from "../assets/logo.png"
-import { Link, NavLink } from "react-router-dom";
-import useAuth from "../hooks/useAuth";
 import { MdLogin } from "react-icons/md";
+import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/logo.png"
+import useAuth from "../hooks/useAuth";
 import ThemeController from "./ThemeController";
 
 const Navbar = () => {
     const { user, signOutUser } = useAuth();
     return (
-        <nav className="shadow-lg sticky top-0 z-40 bg-indigo-100">
+        <nav className="shadow-lg sticky top-0 z-40 bg-indigo-200">
             <div className="navbar container mx-auto px-5">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="lg:hidden me-3">
                             <FaBars className="text-3xl dark:text-gray-800" />
                         </div>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-lg px-4 py-5 z-[1] mt-3 w-52 p-2 space-y-1 dark:text-gray-800 shadow font-medium">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content bg-base-100 rounded-lg px-4 py-5 z-[1] mt-3 w-52 p-2 space-y-2 dark:text-gray-800 shadow font-medium">
                             <li><NavLink to='/' className='rounded'>Home</NavLink></li>
-                            <li><NavLink to='/assignments' className='rounded'>Assignments</NavLink></li>
+                            <li><NavLink to='/assignments' className='rounded'>All Assignment</NavLink></li>
                             {
-                                user && <li><NavLink to='/pending-assignments' className='rounded'>Pending Assignments</NavLink></li>
+                                user ? <li><NavLink to='/pending-assignments' className='rounded'>Pending Assignments</NavLink></li> :
+                                    <li><NavLink to='/aboutUs' className='rounded'>About Us</NavLink></li>
                             }
+                            <li><NavLink to='/contact' className='rounded'>Contact</NavLink></li>
+                            <li><NavLink to='/support' className='rounded'>Support</NavLink></li>
                         </ul>
                     </div>
                     <Link to="/">
@@ -28,19 +31,15 @@ const Navbar = () => {
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal text-black px-1 font-medium">
+                    <ul className="menu menu-horizontal text-black px-1 gap-x-6 text-[15px] font-medium">
                         <li><NavLink to='/' className='rounded'>Home</NavLink></li>
-                        <li><NavLink to='/assignments' className='rounded'>Assignments</NavLink></li>
+                        <li><NavLink to='/assignments' className='rounded'>All Assignment</NavLink></li>
                         {
                             user ? <li><NavLink to='/pending-assignments' className='rounded'>Pending Assignments</NavLink></li> :
                                 <li><NavLink to='/aboutUs' className='rounded'>About Us</NavLink></li>
                         }
-                        {
-                            user ? '' : <li><NavLink to='/contact' className='rounded'>Contact</NavLink></li>
-                        }
-                        {
-                            user ? '' : <li><NavLink to='/support' className='rounded'>Support</NavLink></li>
-                        }
+                        <li><NavLink to='/contact' className='rounded'>Contact</NavLink></li>
+                        <li><NavLink to='/support' className='rounded'>Support</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-2 items-center">

@@ -53,19 +53,17 @@ const AssignmentDetails = () => {
         document.getElementById('my_modal_5').close();
     }
     return (
-        <div className="container mx-auto px-5">
+        <div className="bg-slate-100">
             {
-                assignment && <div className="lg:px-52">
-                    <div className="border space-y-4 sm:grid grid-cols-12 gap-4 sm:gap-7 items-center p-4 md:p-6 rounded-lg border-gray-300 shadow my-10">
-                        <img src={assignment.thumbnail} className="w-full h-40 md:h-56 rounded-lg col-span-4" />
-                        <div className="col-span-8">
-                            <h3 className="md:text-lg font-semibold mb-1 sm:mb-2">{assignment.title}</h3>
-                            <p className="text-gray-500 text-sm sm:text-base mb-1 sm:mb-2">{assignment.description}</p>
-                            <p><span className="text-gray-700 dark:text-gray-400 font-medium">Difficulty Level:</span> <span className="font-medium dark:text-gray-500 text-gray-600">{assignment.difficulty_level}</span></p>
-                            <div className="flex items-center justify-between mb-2">
-                                <p className="font-medium text-gray-600 dark:text-gray-500"><span className="text-gray-700 font-medium dark:text-gray-400">Marks:</span> {assignment.marks}</p>
-                                <p className="px-4 dark:text-gray-700 font-medium cursor-pointer py-2 rounded-full text-xs bg-indigo-200">{assignment.date}</p>
-                            </div>
+                assignment && <div className="container mx-auto my-10 px-5 lg:px-32 xl:px-40">
+                    <div className="border bg-white rounded-lg shadow-lg grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-5">
+                        <img src={assignment.thumbnail} className="w-full h-full sm:h-96 rounded" />
+                        <div className="">
+                            <p className="text-2xl text-gray-800 font-medium mb-3">{assignment.title}</p>
+                            <p className="text-gray-600 mb-2">{assignment.description}</p>
+                            <p className="text-gray-700 font-medium mb-1">Difficulty Level: <span className="font-normal">{assignment.difficulty_level}</span></p>
+                            <p className="font-medium text-gray-700 mb-1">Marks: <span className="font-normal">{assignment.marks}</span></p>
+                            <p className="text-gray-700 font-medium text-base mb-4">Date: <span className="font-normal">{assignment.date}</span></p>
                             <button onClick={() => document.getElementById('my_modal_5').showModal()} className="bg-indigo-600 transition-all hover:bg-transparent border border-indigo-600 hover:text-indigo-600 text-white px-3 py-1 md:px-5 md:py-[7px] rounded font-medium text-xs md:text-sm">Take assignment</button>
                         </div>
                     </div>
