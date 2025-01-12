@@ -1,6 +1,7 @@
 import aboutImg from "../assets/about.jpg"
 import { Link } from "react-router-dom";
 
+
 const AboutUs = () => {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 my-16 container mx-auto px-5 items-center">
