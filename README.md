@@ -7,14 +7,14 @@ The purpose of this project is to create a collaborative online platform where u
 
 ## 2. Used Technologies:
 
-### Clint Side
+### Clint Side:
 - HTML | CSS 
 - Tailwind CSS
 - JavaScript
 - React JS
 - Axios
 
-### Server Side
+### Server Side:
 - MongoDB
 - Express JS
 - Node JS
@@ -97,5 +97,5 @@ Create a `.env` file and put your environment variable there. Save the following
 ## 10. At a Glance:
 
 <div align="center">
-  <img src="https://github.com/towfiqislambd/bistro-boss-restaurant/blob/main/src/assets/full_project.png"  />
+  <img src="https://github.com/towfiqislambd/online-group-study/blob/main/src/assets/full_project.png"  />
 </div>
