@@ -5,7 +5,7 @@ const Support = () => {
                 <h2 className="md:text-4xl text-3xl dark:text-white font-bold text-gray-700 mb-4">
                     Frequently Asked Questions
                 </h2>
-                <p className="lg:w-2/3 md:w-3/4 mx-auto text-gray-600 dark:text-gray-400">
+                <p className="lg:w-2/3 md:w-3/4 mx-auto text-gray-600 dark:text-gray-300">
                     You can create an account in this platform by using registration form or social login whatever you want. Besides, if you join in our community, you will get lots of opportunity as well.
                 </p>
             </div>

@@ -53,28 +53,28 @@ const CreateAssignments = () => {
     }
     return (
         <div className="container mx-auto px-5 sm:px-10">
-            <div className="bg-indigo-50 mx-auto shadow-xl border border-indigo-100 rounded-lg my-8 max-w-3xl">
-                <form onSubmit={handleCreateAssignment} className="p-4 sm:p-8 space-y-3 sm:space-y-5 bg-gray-200 border">
+            <div className="bg-indigo-50 dark:bg-transparent mx-auto shadow-xl border border-indigo-100 rounded-lg my-8 max-w-3xl">
+                <form onSubmit={handleCreateAssignment} className="p-4 sm:p-8 space-y-3 sm:space-y-5 dark:bg-transparent bg-gray-200 border">
                     <h3 className="text-2xl sm:text-3xl font-bold text-indigo-500 text-center">Create Assignment...</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-                        <input type="text" name="title" placeholder="Assignment Title" className="input dark:text-gray-700 col-span-2 sm:col-span-1 bg-white w-full input-bordered border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition" required />
+                        <input type="text" name="title" placeholder="Assignment Title" className="input dark:text-gray-700 col-span-2 dark:bg-gray-100 sm:col-span-1 bg-white w-full input-bordered border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition" required />
                         <div className='col-span-2 sm:col-span-1'>
-                            <input type="number" name="marks" placeholder="Marks" className="input dark:text-gray-700 bg-white w-full input-bordered border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition" required />
+                            <input type="number" name="marks" placeholder="Marks" className="input dark:text-gray-700 bg-white  dark:bg-gray-100 w-full input-bordered border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition" required />
                             {
                                 marksError && <p className='mt-1 text-error'>{marksError}</p>
                             }
                         </div>
                         <div className='col-span-2 sm:col-span-1'>
-                            <input type="url" name="thumbnail" placeholder="Thumbnail Image URL" className="input bg-white w-full dark:text-gray-700 input-bordered border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition" required />
+                            <input type="url" name="thumbnail" placeholder="Thumbnail Image URL" className="input bg-white w-full  dark:bg-gray-100 dark:text-gray-700 input-bordered border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition" required />
                             {
                                 thumbnailError && <p className='mt-1 text-error'>{thumbnailError}</p>
                             }
                         </div>
-                        <div className="w-full input input-bordered pt-3">
+                        <div className="w-full input dark:bg-gray-100 input-bordered pt-3">
                             <DatePicker name="date" className="w-full dark:text-gray-700 text-gray-400" selected={startDate} onChange={(date) => setStartDate(date)} />
                         </div>
                         <div className='col-span-2'>
-                            <select name='difficulty_level' defaultValue='defOption' className="select bg-white w-full border-gray-300 rounded-md shadow-sm dark:text-gray-700 focus:border-indigo-400 focus:ring focus:ring-indigo-200 text-gray-400 transition" required >
+                            <select name='difficulty_level' defaultValue='defOption' className="select bg-white w-full border-gray-300 rounded-md dark:bg-gray-100 shadow-sm dark:text-gray-700 focus:border-indigo-400 focus:ring focus:ring-indigo-200 text-gray-400 transition" required >
                                 <option value='defOption' disabled>Assignment Difficulty Level</option>
                                 <option value='Easy'>Easy</option>
                                 <option value='Medium'>Medium</option>
@@ -85,7 +85,7 @@ const CreateAssignments = () => {
                             }
                         </div>
                     </div>
-                    <textarea name="description" rows={5} className="textarea dark:text-gray-700 w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition"
+                    <textarea name="description" rows={5} className="textarea dark:bg-gray-100 dark:text-gray-700 w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-400 focus:ring focus:ring-indigo-200 transition"
                         placeholder="Description...." required></textarea>
                     <button type="submit" className="btn w-full bg-indigo-600 hover:bg-indigo-700 text-white rounded-md py-2 shadow-md transition">Create Assignment</button>
                 </form>

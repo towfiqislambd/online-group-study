@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import useAxiosSecure from '../hooks/useAxiosSecure';
 import useAuth from '../hooks/useAuth';
 import Swal from 'sweetalert2'
@@ -62,7 +62,7 @@ const PendingAssignments = () => {
             {
                 assignments.length === 0 ? (
                     <h2 className="text-center text-3xl flex justify-center items-center h-[65vh] text-red-500 font-semibold">No Assignment Found!!!</h2>
-                ) : <div className="overflow-x-auto border border-gray-300 rounded-lg shadow-lg">
+                ) : <div className="overflow-auto h-96 md:h-auto border border-gray-300 rounded-lg shadow-lg">
                     <table className="table w-full xl:table-lg border-collapse">
                         <thead className="bg-gradient-to-r from-indigo-600 text-[15px] to-indigo-800 text-gray-100">
                             <tr>

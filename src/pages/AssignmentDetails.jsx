@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import useAuth from '../hooks/useAuth';
 import useAxiosSecure from '../hooks/useAxiosSecure';
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Swal from 'sweetalert2'
 
 const AssignmentDetails = () => {
+    const navigate = useNavigate()
     const { user } = useAuth();
     const { id } = useParams();
     const axiosSecure = useAxiosSecure();
@@ -15,13 +16,21 @@ const AssignmentDetails = () => {
                 setAssignment(data.data)
             })
     }, [])
+    const handleModal = () => {
+        if (!user) {
+            return navigate('/login')
+        }
+        else {
+            document.getElementById('my_modal_5').showModal()
+        }
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
         const googleDoc = e.target.googleDoc.value;
         const note = e.target.note.value;
         const data = {
-            email: user.email,
+            email: user?.email,
             examinee_name: user?.displayName,
             title: assignment.title,
             assignment_marks: assignment.marks,
@@ -53,18 +62,18 @@ const AssignmentDetails = () => {
         document.getElementById('my_modal_5').close();
     }
     return (
-        <div className="bg-slate-100">
+        <div className="bg-slate-100 dark:bg-transparent">
             {
                 assignment && <div className="container mx-auto my-10 px-5 lg:px-32 xl:px-40">
-                    <div className="border bg-white rounded-lg shadow-lg grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-5">
-                        <img src={assignment.thumbnail} className="w-full h-full sm:h-96 rounded" />
+                    <div className="border dark:bg-transparent bg-white rounded-lg shadow-lg grid grid-cols-1 lg:grid-cols-2 gap-8 items-center p-5">
+                        <img src={assignment.thumbnail} className="w-full dark:border dark:border-gray-700 h-full sm:h-96 rounded" />
                         <div className="">
-                            <p className="text-2xl text-gray-800 font-medium mb-3">{assignment.title}</p>
-                            <p className="text-gray-600 mb-2">{assignment.description}</p>
-                            <p className="text-gray-700 font-medium mb-1">Difficulty Level: <span className="font-normal">{assignment.difficulty_level}</span></p>
-                            <p className="font-medium text-gray-700 mb-1">Marks: <span className="font-normal">{assignment.marks}</span></p>
-                            <p className="text-gray-700 font-medium text-base mb-4">Date: <span className="font-normal">{assignment.date}</span></p>
-                            <button onClick={() => document.getElementById('my_modal_5').showModal()} className="bg-indigo-600 transition-all hover:bg-transparent border border-indigo-600 hover:text-indigo-600 text-white px-3 py-1 md:px-5 md:py-[7px] rounded font-medium text-xs md:text-sm">Take assignment</button>
+                            <p className="text-2xl dark:text-white text-gray-800 font-medium mb-3">{assignment.title}</p>
+                            <p className="text-gray-600 dark:text-gray-300 mb-2">{assignment.description}</p>
+                            <p className="text-gray-700 dark:text-gray-400 font-medium mb-1">Difficulty Level: <span className="font-normal">{assignment.difficulty_level}</span></p>
+                            <p className="font-medium dark:text-gray-400 text-gray-700 mb-1">Marks: <span className="font-normal">{assignment.marks}</span></p>
+                            <p className="text-gray-700 dark:text-gray-400 font-medium text-base mb-4">Date: <span className="font-normal">{assignment.date}</span></p>
+                            <button onClick={handleModal} className="bg-indigo-600 transition-all hover:bg-transparent border border-indigo-600 hover:text-indigo-600 text-white px-3 py-1 md:px-5 md:py-[7px] rounded font-medium text-xs md:text-sm">Take assignment</button>
                         </div>
                     </div>
                 </div>

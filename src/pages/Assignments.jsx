@@ -94,24 +94,22 @@ const Assignments = () => {
     return (
         <div className="container mx-auto px-5 mb-10 mt-8">
             <div className="mb-10 flex flex-wrap justify-center items-center gap-3 lg:gap-5">
-
-                <select value={filteredData ? filteredData : 'defOption'} onChange={e => setFilteredData(e.target.value)} className="select select-bordered dark:bg-gray-100 text-gray-700">
+                <select value={filteredData ? filteredData : 'defOption'} onChange={e => setFilteredData(e.target.value)} className="select select-bordered dark:bg-gray-200 text-gray-700">
                     <option value='defOption' disabled>Filter By Difficulty Level</option>
                     <option value='Easy'>Easy</option>
                     <option value='Medium'>Medium</option>
                     <option value='Hard'>Hard</option>
                 </select>
                 <div className="relative w-80">
-                    <input value={search} onChange={e => setSearch(e.target.value)} type="text" placeholder="Search Here..." className="input dark:text-gray-900 dark:bg-gray-100 input-bordered w-full" />
-                    <IoSearchOutline className="text-2xl absolute top-3 right-3" />
+                    <input value={search} onChange={e => setSearch(e.target.value)} type="text" placeholder="Search Here..." className="input dark:text-gray-900 dark:bg-gray-200 input-bordered w-full" />
+                    <IoSearchOutline className="text-2xl dark:text-gray-800 absolute top-3 right-3" />
                 </div>
-                <select value={sort ? sort : 'defOption'} onChange={e => setSort(e.target.value)} className="select select-bordered dark:bg-gray-100 text-gray-700">
+                <select value={sort ? sort : 'defOption'} onChange={e => setSort(e.target.value)} className="select select-bordered dark:bg-gray-200 text-gray-700">
                     <option value='defOption' disabled>Sort By Marks</option>
                     <option value='asc'>Ascending</option>
                     <option value='dsc'>Descending</option>
                 </select>
                 <button onClick={handleReset} type="button" className="px-5 font-medium py-[0.7rem] dark:bg-indigo-700 bg-gray-800 text-gray-100 rounded-lg">Reset</button>
-
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-6">
                 {

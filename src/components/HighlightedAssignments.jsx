@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import Highlightes from "./Highlightes";
+import Highlight from "./Highlight";
 
 const HighlightedAssignments = () => {
     const [assignments, setAssignments] = useState([]);
@@ -19,7 +19,7 @@ const HighlightedAssignments = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {
-                    slicedAssignments.map(assignment => <Highlightes key={assignment._id} assignment={assignment}></Highlightes>)
+                    slicedAssignments.map(assignment => <Highlight key={assignment._id} assignment={assignment}></Highlight>)
                 }
             </div>
         </div>
