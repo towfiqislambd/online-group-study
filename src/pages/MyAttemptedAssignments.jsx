@@ -16,7 +16,7 @@ const MyAttemptedAssignments = () => {
     return (
         <div className="container mx-auto px-5 xl:px-28 my-10">
             {assignments.length === 0 ? (
-                <h2 className="text-center text-3xl text-red-500 font-semibold">You did not submit any Assignment yet!!!</h2>
+                <h2 className="text-center text-3xl flex justify-center items-center h-[65vh] text-red-500 font-semibold">You did not submit any Assignment yet!!!</h2>
             ) : (
                 <div className="overflow-x-auto border-2 rounded-lg shadow-lg border-gray-400">
                     <table className="table-auto w-full border-collapse border-spacing-0">

@@ -51,7 +51,7 @@ const Navbar = () => {
                                 <div className="tooltip flex items-center tooltip-bottom" data-tip={user?.displayName}>
                                     <img referrerPolicy="no-referrer" src={user?.photoURL} alt="Profile" tabIndex={0} role="button" className="w-[2.7rem] h-[2.7rem] border rounded-full hover:scale-105 transition-transform duration-300 cursor-pointer" />
                                 </div>
-                                <ul tabIndex={0} className="dropdown-content font-medium space-y-2 border mt-3  menu bg-base-100 rounded-lg z-[1] w-56 py-5 shadow">
+                                <ul tabIndex={0} className="dropdown-content font-medium space-y-2 border mt-3  menu bg-gray-200 rounded-lg z-[1] w-60 py-5 shadow">
                                     <Link to='/create-assignment' className="hover:text-white dark:text-gray-800 hover:bg-indigo-500 py-1 px-3 rounded transition-all">Create Assignment</Link>
                                     <Link to='/my-Submitted-assignments' className="hover:text-white hover:bg-indigo-500 py-1 px-3 rounded dark:text-gray-800 transition-all">My Submitted Assignments</Link>
                                 </ul>

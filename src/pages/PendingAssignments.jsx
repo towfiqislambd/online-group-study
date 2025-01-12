@@ -61,7 +61,7 @@ const PendingAssignments = () => {
         <div className="container mx-auto px-3 lg:px-5 my-10">
             {
                 assignments.length === 0 ? (
-                    <h2 className="text-center text-3xl text-red-500 font-semibold">No Assignment Found!!!</h2>
+                    <h2 className="text-center text-3xl flex justify-center items-center h-[65vh] text-red-500 font-semibold">No Assignment Found!!!</h2>
                 ) : <div className="overflow-x-auto border border-gray-300 rounded-lg shadow-lg">
                     <table className="table w-full xl:table-lg border-collapse">
                         <thead className="bg-gradient-to-r from-indigo-600 text-[15px] to-indigo-800 text-gray-100">
@@ -109,7 +109,7 @@ const PendingAssignments = () => {
                                                 anchor.click();
                                             }
                                         }} />
-                                    <textarea defaultValue={selectedAssignments.note} name="note" className='textarea textarea-bordered dark:text-gray-700 rounded w-full' rows={2}></textarea>
+                                    <textarea defaultValue={selectedAssignments.note} name="note" className='textarea textarea-bordered dark:text-gray-700 rounded w-full' rows={3}></textarea>
                                     <input name="obtained_marks" type="number" placeholder="Marks" className="input input-bordered dark:text-gray-700 mb-2 w-full rounded" required />
                                     <textarea name="feedback" className='textarea  textarea-bordered rounded w-full dark:text-gray-700' placeholder="Write Feedback...." rows={3} required></textarea>
                                     <input type="submit" value='Submit' className="btn mb-2 w-full block bg-indigo-500 hover:bg-indigo-600 text-white" />

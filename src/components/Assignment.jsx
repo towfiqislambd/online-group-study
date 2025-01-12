@@ -6,12 +6,12 @@ import { MdDeleteForever } from "react-icons/md";
 const Assignment = ({ assignment, handleDelete }) => {
     const { _id, title, thumbnail, description, marks, date, difficulty_level, email } = assignment;
     return (
-        <div className="border-2 p-6 rounded-lg border-gray-200 hover:-translate-y-2 shadow hover:border-2 hover:border-indigo-400 duration-500">
-            <div className="overflow-hidden rounded-lg mb-3">
-                <img src={thumbnail} className="w-full dark:border dark:border-gray-800 h-52 rounded-lg transform hover:scale-105 transition-transform duration-300" />
+        <div className="border-2 flex flex-col justify-between p-6 rounded-lg border-gray-200 hover:-translate-y-2 shadow hover:border-2 hover:border-indigo-400 duration-1000">
+            <div className="overflow-hidden rounded-lg mb-4">
+                <img src={thumbnail} className="w-full dark:border dark:border-gray-800 h-52 rounded-lg transform hover:scale-105 transition-transform duration-1000" />
             </div>
-            <h3 className="text-lg font-semibold mb-2">{title}</h3>
-            <p className="text-gray-600 mb-2">{description.substring(0, 65)}...</p>
+            <p className="text-xl font-semibold mb-2">{title}</p>
+            <p className="text-gray-600 mb-2">{description.substring(0, 75)}...</p>
             <p className="mb-1"><span className="text-gray-700 font-medium dark:text-gray-400">Difficulty Level:</span> <span className="font-medium text-gray-600 dark:text-gray-500">{difficulty_level}</span></p>
             <div className="flex items-center justify-between mb-3">
                 <p className="font-medium dark:text-gray-500 text-gray-600"><span className="text-gray-700 font-medium dark:text-gray-400">Marks:</span> {marks}</p>

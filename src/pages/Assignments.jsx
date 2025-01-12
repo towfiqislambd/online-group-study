@@ -113,7 +113,7 @@ const Assignments = () => {
                 <button onClick={handleReset} type="button" className="px-5 font-medium py-[0.7rem] dark:bg-indigo-700 bg-gray-800 text-gray-100 rounded-lg">Reset</button>
 
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-7">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 xl:gap-6">
                 {
                     assignments.map(assignment => <Assignment key={assignment._id} handleDelete={handleDelete} assignment={assignment}></Assignment>)
                 }
