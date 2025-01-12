@@ -35,8 +35,8 @@ const Slider = () => {
                     backgroundColor: 'rgba(0,0,0,0.83)',
                     backgroundBlendMode: 'overlay'
                 }}>
-                    <div className="h-full flex justify-center items-center flex-col gap-5 text-center px-10 sm:px-20 space-y-3">
-                        <h3 className='text-white text-4xl md:text-[40px] font-semibold'>Enhance Your Skills And <span className='text-indigo-600'>Ability</span></h3>
+                    <div className="h-full flex justify-center items-center flex-col gap-5 text-center px-10 sm:px-20 space-y-1 sm:space-y-3">
+                        <h3 className='text-white text-3xl md:text-[40px] font-semibold'>Enhance Your Skills And <span className='text-indigo-600'>Ability</span></h3>
                         <p className='text-gray-300 text-lg w-11/12 sm:w-10/12 lg:w-8/12 mx-auto'>
                             Online group study provides an opportunity for students to come together virtually and tackle academic challenges as a team. By collaborating with others, you can gain fresh perspectives, share knowledge, and enhance your understanding of the material.
                         </p>
@@ -51,8 +51,8 @@ const Slider = () => {
                     backgroundColor: 'rgba(0,0,0,0.83)',
                     backgroundBlendMode: 'overlay'
                 }}>
-                    <div className="h-full space-y-3 flex justify-center items-center flex-col gap-5 text-center px-10 sm:px-20">
-                        <h3 className='text-white text-4xl md:text-[40px] font-semibold'>Join Collaborative <span className='text-indigo-600'>Learning</span></h3>
+                    <div className="h-full space-y-1 sm:space-y-3 flex justify-center items-center flex-col gap-5 text-center px-10 sm:px-20">
+                        <h3 className='text-white text-3xl md:text-[40px] font-semibold'>Join Collaborative <span className='text-indigo-600'>Learning</span></h3>
                         <p className='text-gray-300 text-lg w-11/12 sm:w-10/12 lg:w-8/12 mx-auto'>
                             Participating in online group study sessions is not just about reviewing course materials. It’s also about developing valuable skills such as teamwork, communication, and problem-solving. As you work with your peers, you’ll learn how to effectively.
                         </p>
@@ -67,8 +67,8 @@ const Slider = () => {
                     backgroundColor: 'rgba(0,0,0,0.83)',
                     backgroundBlendMode: 'overlay'
                 }}>
-                    <div className="h-full space-y-3 flex justify-center items-center flex-col gap-5 text-center px-10 sm:px-20">
-                        <h3 className='text-white text-4xl md:text-[40px] font-semibold'>Achieve Your <span className='text-indigo-600'>Goals</span></h3>
+                    <div className="h-full space-y-1 sm:space-y-3 flex justify-center items-center flex-col gap-5 text-center px-10 sm:px-20">
+                        <h3 className='text-white text-3xl md:text-[40px] font-semibold'>Achieve Your <span className='text-indigo-600'>Goals</span></h3>
                         <p className='text-gray-300 text-lg w-11/12 sm:w-10/12 lg:w-8/12 mx-auto'>
                             Setting academic goals and achieving them is much easier when you have a group of motivated peers to support you. Online group study encourages accountability, making it easier to stay on track with deadlines and progress. With collaborative tools.
                         </p>

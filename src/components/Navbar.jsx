@@ -8,7 +8,7 @@ import ThemeController from "./ThemeController";
 const Navbar = () => {
     const { user, signOutUser } = useAuth();
     return (
-        <nav className="shadow-lg sticky top-0 z-40 bg-indigo-200">
+        <nav className="shadow sticky top-0 z-40 bg-indigo-200">
             <div className="navbar container mx-auto px-5">
                 <div className="navbar-start">
                     <div className="dropdown">

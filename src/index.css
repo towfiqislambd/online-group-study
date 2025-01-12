@@ -2,12 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     font-family: "Inter", serif;
 }
-h1,h2,h3,h4,h5,h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Merriweather", serif;
 }
+
 nav ul li a.active {
     background-color: rgb(99 102 241) !important;
     color: #fff !important;
@@ -22,6 +29,15 @@ nav ul li a.active {
 .swiper-pagination-bullet-active {
     color: rgb(99 102 241) !important;
 }
+
+.swiper-button-prev {
+    padding-left: 4rem;
+}
+
+.swiper-button-next {
+    padding-right: 4rem;
+}
+
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
     background-color: #fff !important;
@@ -33,6 +49,7 @@ nav ul li a.active {
     margin-bottom: 30px;
     margin-top: 30px;
 }
+
 .pagination button {
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -43,9 +60,11 @@ nav ul li a.active {
     color: #111;
     font-weight: 500;
 }
+
 .pagination .active {
     background: orange;
 }
+
 @media screen and (max-width:640px) {
 
     .swiper-button-prev,

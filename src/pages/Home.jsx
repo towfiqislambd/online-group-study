@@ -1,3 +1,4 @@
+import FAQ from '../components/FAQ';
 import Feathers from '../components/Feathers';
 import HighlightedAssignments from '../components/HighlightedAssignments';
 import Slider from '../components/Slider'
@@ -7,8 +8,9 @@ const Home = () => {
         <div>
             <Slider></Slider>
             <HighlightedAssignments></HighlightedAssignments>
-            <Testimonial></Testimonial>
             <Feathers></Feathers>
+            <Testimonial></Testimonial>
+            <FAQ></FAQ>
         </div>
     )
 }

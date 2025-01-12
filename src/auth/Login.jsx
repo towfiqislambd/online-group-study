@@ -64,7 +64,7 @@ const Login = () => {
                     <Link onClick={handleGoogleSignIn} className="items-center dark:text-gray-800 text-center gap-1 md:gap-2 flex -mt-2 border border-indigo-300 text-sm md:text-[16px] rounded-full py-[8px] mx-auto font-medium  bg-indigo-200 hover:bg-indigo-300 transition-all justify-center w-3/4 lg:w-3/5"><FcGoogle className="text-xl md:text-2xl" /> Signin With Google</Link>
                 </form>
                 {
-                    errorMessage && <h3 className="text-center px-7 pb-4 text-error -mt-1">{errorMessage}</h3>
+                    errorMessage && <p className="text-center px-7 pb-4 text-error -mt-1">{errorMessage}</p>
                 }
             </div>
             <div className="order-0 md:order-1">
